@@ -97,14 +97,14 @@ removeDupes(array);
 
 //Rotate an array by k times
 
-function rotateArray(arr, k) {
+let rotateArray = function (arr, k) {
 
     for (let i = 0; i < k; i++) {
         const element = arr.shift();
         arr.push(element);
     }
 }
-// Example usage:
+
 const myArray = [1, 2, 3, 4, 5];
 const rotations = 3;
 rotateArray(myArray, rotations);
