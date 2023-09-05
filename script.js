@@ -117,7 +117,6 @@ let median = function(arr1,arr2){
     let sort1=arr1.sort()
     let sort2=arr2.sort()
     let merged = [...arr1,...arr2]
-    console.log(merged)
     let mid=(sort1[sort1.length-1])+(sort2[sort2.length-1])
     console.log(mid/2)
 }
