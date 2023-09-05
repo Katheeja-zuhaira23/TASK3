@@ -39,7 +39,7 @@ console.log(sumOfNums(nums));
 
 
 let prime_num = function (num) {
-    if (num % 2 === 0) return false
+    if (num % 2 === 0 || num === 1) return false
     if (num === 2) return true
     for (let i = 3; i * i <= num; i += 2) {
         if (num % i === 0)
@@ -50,7 +50,6 @@ let prime_num = function (num) {
 
 function findPrimesInArray(arr) {
     const primeNumbers = [];
-
     for (const num of arr) {
         if (prime_num(num)) {
             primeNumbers.push(num);
