@@ -24,16 +24,16 @@ console.log(changeArray(arr));
 
 //sum of all numbers:
 
-let nums = [1, 2, 3, 4, 5]
+//let nums = [1, 2, 3, 4, 5]
 
-let sumOfNums = function () {
+let sumOfNums = function (...nums) {//modify by spread operator
     let sum = 0
     for (let i = 0; i < nums.length; i++) {
         sum += nums[i]
     }
     return sum;
 }
-console.log(sumOfNums(nums));
+console.log(sumOfNums(10,20,30));
 
 //prime numbers in an array
 
